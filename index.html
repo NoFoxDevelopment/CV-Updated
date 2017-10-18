@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NoFox Web Development CV - Home</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="preload" href="imgs/DarkBackground.jpg" as="image">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/mobileNav.js"></script>
+	<script src="https://use.fontawesome.com/eccbbca379.js"></script>
+</head>
+<body>
+
+<!-- Desktop Navbar -->
+		<div class="navbar">
+			<div class="col-1" style="
+			margin-left:5%; 
+			">
+				<div class="logo">
+					<img src="imgs/svg/FoxHeadColored.png" alt="smallLogo" width="75px" height="75px" />
+				</div>
+			</div>
+			<div class="col-11" style="
+			margin-top: 25px;
+			font-size: 18px;
+			text-align: right;
+			padding-right: 5%;
+			">
+				<div class="block" style="cursor: pointer;" onclick="window.location='index.html';"><i class="fa fa-home" aria-hidden="true"></i>HOME</div>
+				<div class="block dropdown" style="cursor: default;"><i class="fa fa-code" aria-hidden="true"></i>PROJECTS
+					<div class="dropdown-content">
+						<hr>
+						<div class="block" style="cursor:pointer;" onclick="window.location='jsgame.html';"><i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;JS TENNIS</div> <hr>
+						<div class="block" style="cursor:pointer;" onclick="window.location='#';"><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;SOME STUFF I MADE<br />(Placeholder)</div> <hr>
+					</div>
+				</div>
+				<div class="block" style="cursor: pointer;" onclick="window.location='aboutme.html';"><i class="fa fa-id-card" aria-hidden="true"></i>ABOUT ME</div>
+				<div class="block" style="cursor: pointer;" onclick="window.location='testimonials.html';"><i class="fa fa-comments-o" aria-hidden="true"></i>TESTIMONIALS</div>
+			</div>
+		</div>
+
+<!-- Mobile Navbar -->		
+
+		<div class="navbarMobile">
+			<div>test</div><hr>
+			<div>test</div><hr>
+		</div>
+
+<!-- Begin Page Content -->
+		<img id="toggle"src="http://placeholder.pics/svg/75x75/DEDEDE/555555/%7C%7C%7C" onclick="navToggle()" />
+		<div class="row">
+			<div class="col-8">
+				<h1>Let's Build Something Brilliant</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="circleBackground">
+					<img src="imgs/svg/FoxHead.svg" onerror="this.onerror=null; this.src='imgs/svg/FoxHead.png'" alt="NoFoxLogo" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-8">
+				<p class="text">
+				Ever since I was a child, I've been fascinated by computers. That a series of electrons flowing in specific patterns in controlled intervals could translate to everything from exploring a virtual alien world to accessing literally all of the information known to humanity was nothing short of miraculous to me. As I learned more about computers, programming, and how the development process worked, it only fed my drive to become a part of the world that made these miracles happen.<br /><br />
+
+				As a self-taught "developer" I've worked to learn as much as possible about front end website development, from simple HTML and CSS to more in-depth processes like JavaScript, jQuery, Sassy CSS, Bootstrap, and SVG design and animation. Every day I push myself to take on a new challenge, learn a new skill, or improve the skills I have. <br /><br />
+
+				Though I lack a formal education in programming, I have a strong desire to learn and to begin truly taking my first steps within this career. If you are visiting this site, it is my hope it will help show my drive and my potential to join your development team today!
+				</p>
+			</div>
+		</div>
+</body>
+</html>
