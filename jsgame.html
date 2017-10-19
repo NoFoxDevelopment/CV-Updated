@@ -13,7 +13,7 @@
 	<script src="js/style.js"></script>
 	<script src="https://use.fontawesome.com/eccbbca379.js"></script>
 </head>
-<body>
+<body ontouchstart=''>
 
 <!-- Desktop Navbar -->
 		<div class="navbar">
@@ -52,6 +52,52 @@
 		</div>
 
 <!-- Begin Page Content -->
+		<div class="row">
+			<div class="col-8">
+				<h1>JS Tennis - a short JavaScript project</h1>
+			</div>
+		</div>
+
+		<canvas id="gameCanvas" width="480" height="600"></canvas>
+
+		<div class="row">
+			<div class="col-6">
+				<div id="reloadButton" style="display: none;">
+					<a href="#" class="button" onClick="location.reload()">Click Here to Play Again</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-8">
+				<h3>
+					Features of this Project
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-8 text">
+				<p>In under 200 lines of JavaScript and 2 hours of coding/debugging I have accomplished the following with this small project:</p>
+				<ul>
+					<li>A short, playable Pong-like game using JS and HTML5 Canvas Drawing (2d)</li>
+					<li>Score Keeping (a la simplified Tennis) and Win/Loss conditions</li>
+					<li>Mouse Tracking for Player Racket control</li>
+					<li>Simple "Shaky Paddle" AI script</li>
+					<li>AI which improves as the player scores and slows down as it scores.</li>
+					<li>Gradual increase in ball speed with each hit, promoting quick resolution of set</li>
+				</ul>
+				<p>Source code for this game can be found <a href="https://github.com/NoFoxDevelopment/NoFoxWebDevCV/blob/master/js/jstennis.js">HERE</a>.<br /><br />
+				Planned updates/features include:</p>
+				<ul>
+					<li>Random Start Trajectory for ball via Math.Rand x and y velocities</li>
+					<li>AI experimentation for smoother AI behavior. (Current ideas include decreasing speed with proximity to ball so AI never truly achieves "true center". This could lead to more challnging gameplay as AI would theoretically be more likely to hit at more extreme angles.)</li>
+					<li>More satisfying ball bounce. (currently, ball hitting racket edges can lead to "WTF" moments wherein the player believes they should have returned the ball.)</li>
+				</ul>
+				<p>This was a project to teach myself both simple Canvas operation as well as JavaScript fundamentals (declaration of variables, functions, in-built math functions, etc.)</p>
+			</div>
+		</div>
+
+		<script src="js/jstennis.js"></script>
 
 <!-- End Page Content -->
 </body>
