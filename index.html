@@ -3,7 +3,7 @@
 <head>
 	<title>NoFox Web Development CV - Home</title>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="preload" href="imgs/DarkBackground.jpg" as="image">
 
@@ -40,7 +40,7 @@
 					<div class="dropdown-content">
 						<hr>
 						<div class="block" style="cursor:pointer;" onclick="window.location='jsgame.html';"><i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;JS TENNIS</div> <hr>
-						<div class="block" style="cursor:pointer;" onclick="window.location='#';"><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;SOME STUFF I MADE<br>(Placeholder)</div> <hr>
+						<!-- <div class="block" style="cursor:pointer;" onclick="window.location='#';"><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;SOME STUFF I MADE<br>(Placeholder)</div> <hr> -->
 					</div>
 				</div>
 				<div class="block" style="cursor: pointer;" onclick="window.location='aboutme.html';"><i class="fa fa-id-card" aria-hidden="true"></i>ABOUT ME</div>
@@ -51,12 +51,23 @@
 <!-- Mobile Navbar -->		
 
 		<div class="navbarMobile">
-			<div>test</div><hr>
-			<div>test</div><hr>
+			<div><a class="mobileLink" href="index.html">Home</a></div><hr>
+			<div><a class="mobileLink" href="aboutme.html">About Me</a></div><hr>
+			<div><a class="mobileLink">Projects</a></div><hr>
+			<div>&nbsp;&nbsp;&nbsp;<a class="mobileLink" href="jsgame.html">-JS Tennis</a></div><hr>
+			<!-- <div>&nbsp;&nbsp;&nbsp;-Stuff I Made (Placeholder)</div><hr> -->
+			<div><a class="mobileLink" href="testimonials.html">Testimonials</a></div><hr>
+		</div>
+		<div id="mobileNavIcon">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
 
 <!-- Begin Page Content -->
-		<img id="toggle"src="http://placeholder.pics/svg/75x75/DEDEDE/555555/%7C%7C%7C" onclick="navToggle()" />
 		<div class="row">
 			<div class="col-8">
 				<h1>Let's Build Something Brilliant</h1>
