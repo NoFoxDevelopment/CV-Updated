@@ -1,8 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="foxLogo" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
-	<defs>
-		<path id="fox" 
-          fill="none" stroke="#D84700" stroke-width="2" 
-          d="M382.81 54.69L382.81 296.88 117.19 296.88 382.81 54.69ZM117.19 296.88L382.81 296.88 117.19 54.69 117.19 296.88ZM382.81 296.88L250 417.97 117.19 296.88M382.81 54.69L250 417.97 117.19 54.69M250 417.97L250 175.78M210.94 312.5L183.59 296.88M316.41 296.88L289.06 312.5M261.72 386.23L238.28 386.23"/>
-	</defs>
-	<use xlink:href="#fox" opacity="1" fill-opacity="0" stroke="#D84700" stroke-width="2" stroke-opacity="1"/>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" x="0px" y="0px" width="400px" height="594px" viewBox="0 0 400 594">
+<defs>
+<path id="Layer0_0_1_STROKES" stroke="#D84700" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 396.8 3.2
+L 396.8 394.65 201.15 590.3 5.35 394.65 5.35 3.2 201.15 199.05 396.8 3.2 298.85 296.8 396.8 394.65 298.85 394.65 255.45 427.2 201.15 590.3 146.8 427.2 103.2 394.65 5.35 394.65 103.2 296.8 5.35 3.2
+M 103.2 394.65
+L 135.75 394.65 103.2 296.8 201.15 199.05 298.85 296.8 266.3 394.65 298.85 394.65
+M 255.45 427.2
+L 266.3 394.65 201.15 394.65 201.15 590.3
+M 201.15 199.05
+L 201.15 394.65 135.75 394.65 146.8 427.2"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer0_0_1_STROKES"/>
+</g>
 </svg>
