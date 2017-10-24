@@ -10,6 +10,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	overflow-x: hidden;
 }
 
 a {
@@ -148,8 +149,9 @@ em {
 }
 
 .navbar {
-	width: 105%;
-	margin-left: -2.5%;
+	width: 106%;
+	margin-left: -3%;
+	padding: 0;
 	display: flex;	
 	height: 75px;
 	background-color: #CCCCCC;
@@ -255,10 +257,10 @@ em {
 	}
 
 	.col-lg {
-	display: block;
-	width: 85%;
-	margin: 0 auto;
-}
+		display: block;
+		width: 85%;
+		margin: 0 auto;
+	}
 
 	.navbarMobile {
 		display: none;
@@ -280,7 +282,7 @@ em {
 		width: 60px;
 		height: 45px;
 		position: fixed;
-		margin: 70px 10px 0 0;
+		margin: 20px 10px 0 0;
 		right: 0;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -314,68 +316,68 @@ em {
 	}
 
 	#mobileNavIcon span:nth-child(even) {
-	left: 50%;
-	border-radius: 0 9px 9px 0;
+		left: 50%;
+		border-radius: 0 9px 9px 0;
 	}
 
 	#mobileNavIcon span:nth-child(odd) {
-	left:0px;
-	border-radius: 9px 0 0 9px;
+		left:0px;
+		border-radius: 9px 0 0 9px;
 	}
 
 	#mobileNavIcon span:nth-child(1), #mobileNavIcon span:nth-child(2) {
-	top: 0px;
+		top: 0px;
 	}
 
 	#mobileNavIcon span:nth-child(3), #mobileNavIcon span:nth-child(4) {
-	top: 18px;
+		top: 18px;
 	}
 
 	#mobileNavIcon span:nth-child(5), #mobileNavIcon span:nth-child(6) {
-	top: 36px;
+		top: 36px;
 	}
 
 	#mobileNavIcon.open span:nth-child(1),#mobileNavIcon.open span:nth-child(6) {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
 	}
 
 	#mobileNavIcon.open span:nth-child(2),#mobileNavIcon.open span:nth-child(5) {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
 	}
 
 	#mobileNavIcon.open span:nth-child(1) {
-	left: 5px;
-	top: 7px;
+		left: 5px;
+		top: 7px;
 	}
 
 	#mobileNavIcon.open span:nth-child(2) {
-	left: calc(50% - 5px);
-	top: 7px;
+		left: calc(50% - 5px);
+		top: 7px;
 	}
 
 	#mobileNavIcon.open span:nth-child(3) {
-	left: -50%;
-	opacity: 0;
+		left: -50%;
+		opacity: 0;
 	}
 
 	#mobileNavIcon.open span:nth-child(4) {
-	left: 100%;
-	opacity: 0;
+		left: 100%;
+		opacity: 0;
 	}
 
 	#mobileNavIcon.open span:nth-child(5) {
-	left: 5px;
-	top: 29px;
+		left: 5px;
+		top: 29px;
 	}
 
 	#mobileNavIcon.open span:nth-child(6) {
-	left: calc(50% - 5px);
-	top: 29px;
+		left: calc(50% - 5px);
+		top: 29px;
 	}
 }
