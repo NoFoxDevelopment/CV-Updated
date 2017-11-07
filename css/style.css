@@ -128,6 +128,23 @@ em {
     width: 66.66%;
     margin: 0 auto;
 }
+.copyL, .copyR, .copyRico {
+    height: 10px;
+    width: 42%;
+    font-size: 10px;
+    text-align: right;
+    padding: 5px 0 0 0;
+    vertical-align: bottom;
+}
+.copyL {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 75px;
+    font-size: 20px;
+}
+.copyRico {
+    width: 6%;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -144,6 +161,26 @@ em {
 }
 .dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
     display: block;
+}
+.footer, .navbar {
+    width: 106%;
+    margin-left: -3%;
+    padding: 0;
+    display: flex;
+    height: 75px;
+    background-color: #CCCCCC;
+}
+.footer {
+    margin-top: 10px;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.footer a {
+    text-decoration: none;
+}
+.footerMobile {
+    display: none;
 }
 .leftAuthor {
     clear: both;
@@ -171,14 +208,6 @@ em {
 }
 .mobileLink {
     color: black;
-}
-.navbar {
-    width: 106%;
-    margin-left: -3%;
-    padding: 0;
-    display: flex;
-    height: 75px;
-    background-color: #CCCCCC;
 }
 .navbarMobile {
     display: none;
@@ -215,6 +244,20 @@ em {
     display: none;
 }
 
+@media only screen and (max-width: 1231px) {
+    .copyL {
+        width: 70%;
+        font-size: .9em;
+    }
+    .copyR {
+        display: none;
+    }
+    .copyRico {
+        width: 30%;
+        margin-right: 50px;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     h1 {
@@ -230,6 +273,19 @@ em {
         display: block;
         width: 85%;
         margin: 0 auto;
+    }
+    .footer, .copyL {
+        display: none;
+    }
+    .footerMobile {
+        display: block;
+        width: 100%;
+        background-color: #CBCBCB;
+        text-align: center;
+        padding: 6px 0 6px 0;
+    }
+    .footerMobile a {
+        text-decoration: none;
     }
     .navbarMobile {
         display: none;

@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <title>NoFox Web Dev - Prior Clients</title>
+
+    <meta name="description" content="NoFox Development Home Page" />
+    <meta name="robots" content="index,follow" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="preload" href="imgs/DarkBackground.jpg" as="image">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/mobileNav.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="https://use.fontawesome.com/95da13c11e.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    
+    <!--[if IE]><link rel="shortcut icon" href="imgs/favicon.ico"><![endif]-->
+    <link rel="icon" href="imgs/favicon.png">
+    <!-- <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"> -->
+</head>
+
+<body ng-app="constructionApp">
+<!-- Desktop Navbar -->
+<div class="navbar">
+    <div class="col-1" style="
+			margin-left:5%; 
+			">
+        <div class="logo">
+            <img src="imgs/svg/FoxHeadColored.png" alt="smallLogo" width="75px" height="75px" />
+        </div>
+    </div>
+    <div class="col-3">
+        <h3 style="
+				font-size: 25px;
+				color: black;
+				line-height: 90%;
+				text-align: left;
+				padding-left: 2%
+				">Aaron Chavez</h3>
+    </div>
+    <div class="col-8" style="
+				margin-top: 25px;
+				font-size: 18px;
+				text-align: right;
+				padding-right: 5%;
+				">
+        <div class="block" style="cursor: pointer;" onclick="window.location='index.html';">
+            <i class="fa fa-home" aria-hidden="true"></i>HOME</div>
+        <div class="block dropdown" style="cursor: default;">
+            <i class="fa fa-code" aria-hidden="true"></i>PROJECTS
+            <div class="dropdown-content">
+                <hr>
+                <div class="block" style="cursor:pointer;" onclick="window.location='priorclients.html';">
+                    <i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;PRIOR CLIENTS</div>
+                <hr>
+                <div class="block" style="cursor:pointer;" onclick="window.location='jsgame.html';">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;JS TENNIS</div>
+                <hr>
+                <!-- <div class="block" style="cursor:pointer;" onclick="window.location='#';"><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;SOME STUFF I MADE<br>(Placeholder)</div> <hr> -->
+            </div>
+        </div>
+        <div class="block" style="cursor: pointer;" onclick="window.location='aboutme.html';">
+            <i class="fa fa-id-card" aria-hidden="true"></i>ABOUT ME</div>
+        <div class="block" style="cursor: pointer;" onclick="window.location='testimonials.html';">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>TESTIMONIALS</div>
+    </div>
+</div>
+
+<!-- Mobile Navbar -->
+
+<div class="navbarMobile">
+    <a class="mobileLink" href="index.html">
+        <div>Home</div>
+    </a>
+    <hr>
+    <a class="mobileLink" href="aboutme.html">
+        <div>About Me</div>
+    </a>
+    <hr>
+    <a class="mobileLink" href="testimonials.html">
+        <div>Testimonials</div>
+    </a>
+    <hr>
+    <a class="mobileLink">
+        <div>Projects:</div>
+    </a>
+    <br>
+    <a class="mobileLink" href="jsgame.html">
+        <div>-JS Tennis</div>
+    </a>
+    <hr>
+    <!-- <div>&nbsp;&nbsp;&nbsp;-Stuff I Made (Placeholder)</div><hr> -->
+</div>
+<div id="mobileNavIcon">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Begin Page Content -->
+<div class="row">
+    <div class="col-3">
+        <div ng-controller="constController">
+            <h1>{{ title }}</h1>
+            <img src="{{ img }}" style="margin: auto; background-color:whitesmoke; border-radius:50%; height: 40%;"/>
+            <p class="text">{{ blurb }}</p>
+        </div>
+    </div>
+</div>  
+
+        <!-- Begin Footer Content -->
+        <div class="col-lg footer">
+            <div class="copyL">
+                <a href="https://www.linkedin.com/in/chavezaaron/">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>My LinkedIn &nbsp; &nbsp;</a>
+                <a href="mailto:aaron@nofoxdevelopment.com" target="_top">
+                    <i class="fa fa-envelope-square" aria-hidden="true"></i>E-mail Me&nbsp;&nbsp;</a>
+                <a href="tel:+1-317-939-1838">Or call/text me:&nbsp;
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;(373) 939-1838</a>
+            </div>
+            <div class="copyR">
+                <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">nofoxdevelopment.com</span> by
+                <a xmlns:cc="http://creativecommons.org/ns#" href="www.nofoxdevelopment.com" property="cc:attributionName" rel="cc:attributionURL">Aaron Chavez</a> is licensed under a
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" id="footerRight">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+                <br />Based on a work at
+                <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/NoFoxDevelopment/CV-Updated.git" rel="dct:source">https://github.com/NoFoxDevelopment/CV-Updated.git</a>.
+            </div>
+            <div class="copyRico">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                </a>
+            </div>
+        </div>
+        
+        <!-- Begin Mobile Footer Content -->
+        <div class="footerMobile">
+            <a href="tel:+1-373-939-1838">CALL OR TEXT (373) 939-1838</a>
+            <hr>
+            <a href="mailto:aaron@nofoxdevelopment.com" target="_top">E-MAIL aaron@nofoxdevelopment.com</a>
+        </div>
+
+    <!-- Modules -->
+    <script src="js/Angular/app.js"></script>
+    
+    <!-- Controllers -->
+    <script src="js/Angular/controllers/constructionApp.js"></script>
+
+</body>
+</html>
