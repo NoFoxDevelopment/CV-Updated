@@ -7,6 +7,7 @@
 	<meta name="robots" content="index,follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google" content="nositelinkssearchbox" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -14,14 +15,14 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/mobileNav.js"></script>
-	<script scr="js/logo.js"></script>
+	<script src="js/logo.js"></script>
 	<script src="https://use.fontawesome.com/eccbbca379.js"></script>
 
 	<!--[if IE]><link rel="shortcut icon" href="imgs/favicon.ico"><![endif]-->
 	<link rel="icon" href="imgs/favicon.png">
 	<!-- <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"> -->
 </head>
-<body ontouchstart=''>
+<body ontouchstart='' onload='logoRefresh()'>
 <!-- Desktop Navbar -->
 		<div class="navbar">
 			<div class="col-1" style="
@@ -31,12 +32,21 @@
 					<img src="imgs/svg/FoxHeadColored.png" alt="smallLogo" width="75px" height="75px" />
 				</div>
 			</div>
-			<div class="col-11" style="
-			margin-top: 25px;
-			font-size: 18px;
-			text-align: right;
-			padding-right: 5%;
-			">
+			<div class="col-3">
+				<h3 style="
+				font-size: 25px;
+				color: black;
+				line-height: 90%;
+				text-align: left;
+				padding-left: 2%
+				">Aaron Chavez</h3>
+			</div>
+			<div class="col-8" style="
+				margin-top: 25px;
+				font-size: 18px;
+				text-align: right;
+				padding-right: 5%;
+				">
 				<div class="block" style="cursor: pointer;" onclick="window.location='index.html';"><i class="fa fa-home" aria-hidden="true"></i>HOME</div>
 				<div class="block dropdown" style="cursor: default;"><i class="fa fa-code" aria-hidden="true"></i>PROJECTS
 					<div class="dropdown-content">
@@ -79,7 +89,7 @@
 
 		<div class="row">
 			<div class="col-lg" style="max-width: 400px;">
-				<img src="imgs/svg/FoxHeadAnimated.svg" onerror="this.onerror=null; this.src='imgs/svg/FoxHead.png'" alt="If your browser supported Animated SVG you'd be seeing something pretty cool right now." style="width:100%">
+				<img src="imgs/svg/FoxHeadAnimated.svg" onerror="this.onerror=null; this.src='imgs/svg/FoxHead.png'" alt="If your browser supported Animated SVG you'd be seeing something pretty cool right now." style="width:100%" id="foxHeadAnimata" />
 			</div>
 		</div>
 
