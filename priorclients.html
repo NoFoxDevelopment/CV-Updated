@@ -55,9 +55,9 @@
         <div class="block dropdown" style="cursor: default;">
             <i class="fa fa-code" aria-hidden="true"></i>PROJECTS
             <div class="dropdown-content">
-                <hr>
+                <!-- <hr>
                 <div class="block" style="cursor:pointer;" onclick="window.location='priorclients.html';">
-                    <i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;PRIOR CLIENTS</div>
+                    <i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;PRIOR CLIENTS</div> -->
                 <hr>
                 <div class="block" style="cursor:pointer;" onclick="window.location='jsgame.html';">
                     <i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;JS TENNIS</div>
@@ -107,13 +107,11 @@
 </div>
 
 <!-- Begin Page Content -->
-<div class="row">
-    <div class="col-3">
-        <div ng-controller="constController">
+<div class="row" ng-controller="constController">
+    <div class="col-lg">
             <h1>{{ title }}</h1>
-            <img src="{{ img }}" style="margin: auto; background-color:whitesmoke; border-radius:50%; height: 40%;"/>
+            <!-- <img src="{{ img }}" style="background-color:whitesmoke; border-radius:50%; height: 40%;"/> -->
             <p class="text">{{ blurb }}</p>
-        </div>
     </div>
 </div>  
 
