@@ -6,9 +6,9 @@ $(document).ready(function(){
 		$('.navbarMobile').slideToggle();
 		if (toggled === false) {
 			toggled = true;
-			$(this).css({marginTop: '+=215px'});
+			$(this).css({marginTop: '+=225px'});
 		} else {
 			toggled = false;
-			$(this).css({marginTop: '-=215px'})};
+			$(this).css({marginTop: '-=225px'})};
 	});
 });
