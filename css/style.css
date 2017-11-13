@@ -19,6 +19,9 @@ canvas {
     display: block;
     margin: 0 auto;
 }
+em {
+    color: #D84700;
+}
 h1, h3 {
     text-align: center;
     color: white;
@@ -32,14 +35,15 @@ h3 {
 p,ul {
     font-size: 17px;
 }
-canvas {
-    background: #eee;
-    display: block;
-    margin: 0 auto;
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
 }
-em {
-    color: #D84700;
+sub { 
+  top: 0.4em; 
 }
+
 .block {
     width: auto;
     display: inline-block;
@@ -208,9 +212,16 @@ em {
 }
 .mobileLink {
     color: black;
+    display: none;
 }
 .navbarMobile {
     display: none;
+}
+.navbarMobile hr {
+    display: none;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 .rightAuthor {
     clear: both;
@@ -243,6 +254,9 @@ em {
 #toggle {
     display: none;
 }
+#gameMessage {
+    display: none;
+}
 
 @media only screen and (max-width: 1231px) {
     .copyL {
@@ -260,6 +274,9 @@ em {
 
 
 @media only screen and (max-width: 768px) {
+    canvas {
+        display: none;
+    }
     h1 {
     font-size: 30px;
     }
@@ -291,15 +308,25 @@ em {
         display: none;
         position: fixed;
         text-align: right;
-        padding: 5px;
+        padding: 10px 5px 10px 7px;
         top: 0;
         right: 0;
         width: 20%;
         background-color: #D84700;
         border-bottom-left-radius: 1em;
     }
+    .navbarMobile a {
+        text-decoration: none;
+        display: block;
+    }
+    .navbarMobile hr {
+        display: block;
+    }
     .navbar {
         display: none;
+    }
+    #gameMessage {
+        display: block;
     }
     #mobileNavIcon {
         width: 60px;
@@ -390,5 +417,8 @@ em {
     #mobileNavIcon.open span:nth-child(6) {
         left: calc(50% - 5px);
         top: 29px;
+    }
+    #reloadButton {
+    display: none;
     }
 }
