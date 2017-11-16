@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
+    margin: 0;
 }
 a {
     color: #D84700;
@@ -311,9 +312,10 @@ sub {
         padding: 10px 5px 5px 5px;
         top: 0;
         right: 0;
-        width: 28%;
+        width: 40%;
         background-color: #D84700;
         border-bottom-left-radius: 1em;
+        z-index: 99;
     }
     .navbarMobile a {
         text-decoration: none;
@@ -343,6 +345,7 @@ sub {
         -o-transition: .5s ease-in-out;
         transition: .5s ease-in-out;
         cursor: pointer;
+        z-index: 99;
     }
     #mobileNavIcon span {
         display: block;
