@@ -20,29 +20,29 @@ function isMobile() {
 
 if (!isMobile()) {
 
-	var canvas = document.getElementById('gameCanvas');
-	var ctx = canvas.getContext('2d');
-	var x = canvas.width / 2;
-	var y = canvas.height / 2 + 30;
-	var xv = 2;
-	var yv = -2;
-	var ballRadius = 5;
-	var paddleHeight = 10;
-	var paddleWidth = 80;
-	var paddleX = (canvas.width - paddleWidth) / 2;
-	var aiPaddleHeight = 10;
-	var aiPaddleWidth = 80;
-	var aiPaddleX = (canvas.width - paddleWidth) / 2;
-	var rightPressed = false;
-	var leftPressed = false;
-	var drawing = setInterval(draw, 10);
-	var playerScore = 0;
-	var AIScore = 0;
-	var AISpeed = 2.5;
+	let canvas = document.getElementById('gameCanvas'),
+		ctx = canvas.getContext('2d'),
+		x = canvas.width / 2,
+		y = canvas.height / 2 + 30,
+		xv = 2,
+		yv = -2,
+		ballRadius = 5,
+		paddleHeight = 10,
+		paddleWidth = 80,
+		paddleX = (canvas.width - paddleWidth) / 2,
+		aiPaddleHeight = 10,
+		aiPaddleWidth = 80,
+		aiPaddleX = (canvas.width - paddleWidth) / 2,
+		rightPressed = false,
+		leftPressed = false,
+		drawing = setInterval(draw, 10),
+		playerScore = 0,
+		AIScore = 0,
+		AISpeed = 2.5;
 
 	//Track Mouse Position relative to canvas for precise paddle control
 	canvas.addEventListener('mousemove', function (e) {
-		var relativeX = e.clientX - canvas.offsetLeft;
+		let relativeX = e.clientX - canvas.offsetLeft;
 		paddleX = relativeX - paddleWidth / 2;
 	})
 
@@ -71,9 +71,9 @@ if (!isMobile()) {
 	}
 
 	function getRandomColor() {
-		var letters = '0123456789ABCDEF';
-		var color = '#';
-		for (var i = 0; i < 6; i++) {
+		let letters = '0123456789ABCDEF';
+		let color = '#';
+		for (let i = 0; i < 6; i++) {
 			color += letters[Math.floor(Math.random() * 16)];
 		}
 
@@ -115,7 +115,7 @@ if (!isMobile()) {
 			xv = -xv;
 		}
 		if (y + yv - 9 < ballRadius) {
-			if (x > aiPaddleX && x < aiPaddleX + aiPaddleWidth) {
+			if (x > aiPaddleX && x < aiPaddleX + aiPaddleWidth + 5) {
 				yv = -yv * 1.05;
 				let dx = x - (aiPaddleX + aiPaddleWidth / 2);
 				xv = dx * 0.15; //Simple angle control and bounce-back when hitting the paddle with slightly increased ball speed.
@@ -134,14 +134,14 @@ if (!isMobile()) {
 				else if (playerScore === 40) {
 					ctx.fillStyle = '#0070E3';
 					ctx.font = "30px Courier";
-					ctx.fillText('YOU WIN!', 160, canvas.height / 2);
+					ctx.fillText('YOU WIN!', 160, canvas.height / 5);
 					document.getElementById('reloadButton').style.display = 'block';
 					endGame();  //AI misses ball, so win if playerscore is 40, then give "Play Again" button to reload page and allow another match.
 				}
 			}
 		}
 		else if (y + yv + 9 > canvas.height - ballRadius) {
-			if (x > paddleX && x < paddleX + paddleWidth) {
+			if (x > paddleX && x < paddleX + paddleWidth + 2) {
 				yv = -yv * 1.05;
 				let dx = x - (paddleX + paddleWidth / 2);
 				xv = dx * 0.15; //Simple angle control and bounce-back when hitting the paddle with slightly increased ball speed.
@@ -185,6 +185,6 @@ if (!isMobile()) {
 		x = canvas.width / 2;
 		y = canvas.height / 2;
 		xv = 2;
-		yv = -2;
+		yv = Math.rand() * 4 - 2;
 	}
 }
