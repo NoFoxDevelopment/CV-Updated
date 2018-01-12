@@ -123,12 +123,12 @@ if (!isMobile()) {
 			else {
 				if (playerScore === 0 || playerScore === 15) {
 					playerScore += 15;
-					AISpeed += .25;
+					AISpeed += 5;
 					reset(); //AI misses ball, so increase by 15 if score @ Love or 15, then reset ball position. Also increase AI speed slightly to ramp up difficulty
 				}
 				else if (playerScore === 30) {
 					playerScore += 10;
-					AISpeed += 1;
+					AISpeed += 10;
 					reset(); //AI misses ball, so increase by 10 if score @ 30, then reset ball position. Also increase AI speed a bit more to ramp up difficulty
 				}
 				else if (playerScore === 40) {
@@ -149,12 +149,12 @@ if (!isMobile()) {
 			else {
 				if (AIScore === 0 || AIScore === 15) {
 					AIScore += 15;
-					AISpeed -= .15; //Slightly slow down AI.
+					AISpeed -= 2.5; //Slightly slow down AI.
 					reset(); //Player misses ball, so increase AIScore by 15 if score @ Love or 15, then reset ball position. Also decrease AI speed slightly to ramp down difficulty
 				}
 				else if (AIScore === 30) {
 					AIScore += 10;
-					AISpeed -= .2; //Slow down AI a bit more to give player a better chance.
+					AISpeed -= 5; //Slow down AI a bit more to give player a better chance.
 					reset(); //Player misses ball, so increase AIScore by 10 if score @ 30, then reset ball position. Also decrease AI speed a bit more to ramp down difficulty
 				}
 				else if (AIScore === 40) {
@@ -168,9 +168,9 @@ if (!isMobile()) {
 		}
 
 		if (aiPaddleX + aiPaddleWidth / 2 < x) { //Basic "Shaky Paddle AI" will track ball at predetermined speed. This means players will need to use Angle control to score against AI.
-			aiPaddleX += AISpeed;
+			aiPaddleX += Math.abs(AISpeed * ((aiPaddleX + aiPaddleWidth / 2) - x) / canvas.width);
 		} else {
-			aiPaddleX -= AISpeed;
+			aiPaddleX -= Math.abs(AISpeed * ((aiPaddleX + aiPaddleWidth / 2) - x) / canvas.width);
 		}
 
 		x += xv;
@@ -185,6 +185,5 @@ if (!isMobile()) {
 		x = canvas.width / 2;
 		y = canvas.height / 2;
 		xv = 2;
-		yv = Math.rand() * 4 - 2;
 	}
 }
