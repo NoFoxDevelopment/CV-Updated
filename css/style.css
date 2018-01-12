@@ -51,7 +51,7 @@ sub {
     padding: 0 5px 0 10px;
 }
 .block.dropdown {
-    width: 100px;
+    width: auto;
     clear: both;
     float: center;
 }
@@ -70,8 +70,8 @@ sub {
 }
 .col-1 {
     display: block;
-    width: 8.33%;
-    margin: 0 auto;
+    width: auto;
+    margin: auto;
 }
 .col-2 {
     display: block;
@@ -327,14 +327,16 @@ sub {
     .navbar {
         display: none;
     }
+    .row {
+        margin: 0 15%;
+    }
     #gameMessage {
         display: block;
     }
     #mobileNavIcon {
-        width: 60px;
-        height: 45px;
+        width: 44px;
         position: fixed;
-        margin: 70px 10px 0 0;
+        margin: 6px 6px 0 0;
         right: 0;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -350,7 +352,7 @@ sub {
     #mobileNavIcon span {
         display: block;
         position: absolute;
-        height: 9px;
+        height: 6px;
         width: 50%;
         background: #D84700;
         opacity: 1;
