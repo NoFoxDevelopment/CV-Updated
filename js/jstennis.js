@@ -38,7 +38,7 @@ if (!isMobile()) {
 		drawing = setInterval(draw, 10),
 		playerScore = 0,
 		AIScore = 0,
-		AISpeed = 2.5;
+		AISpeed = 30;
 
 	//Track Mouse Position relative to canvas for precise paddle control
 	canvas.addEventListener('mousemove', function (e) {
