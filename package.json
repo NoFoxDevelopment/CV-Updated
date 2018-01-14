@@ -1,0 +1,32 @@
+{
+  "name": "cv-updated-mean",
+  "version": "3.0.0",
+  "description": "2018 CV utilizing MEAN stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoFoxDevelopment/CV-Updated.git"
+  },
+  "keywords": [
+    "CV",
+    "Curriculum",
+    "Vitae",
+    "Web",
+    "Development",
+    "MEAN"
+  ],
+  "author": "NoFoxDevelopment",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoFoxDevelopment/CV-Updated/issues"
+  },
+  "homepage": "https://github.com/NoFoxDevelopment/CV-Updated#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "faker": "^4.1.0"
+  }
+}

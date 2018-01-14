@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<title>NoFox Web Dev - Home</title>
+
+	<meta name="description" content="NoFox Development Home Page" />
+	<meta name="robots" content="index,follow" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="google" content="nositelinkssearchbox" />
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<link rel="preload" href="imgs/DarkBackground.jpg" as="image">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/mobileNav.js"></script>
+	<script src="js/logo.js"></script>
+	<script src="https://use.fontawesome.com/95da13c11e.js"></script>
+
+	<!--[if IE]><link rel="shortcut icon" href="imgs/favicon.ico"><![endif]-->
+	<link rel="icon" href="imgs/favicon.png">
+	<!-- <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png"> -->
+</head>
+
+<body ontouchstart='' onload='logoRefresh()'>
+	
+	<!-- Desktop Navbar -->
+	<div class="navbar">
+		<div class="col-1" style="
+						margin-left:5%; 
+						">
+			<div class="logo">
+				<img src="imgs/svg/FoxHeadColored.png" alt="smallLogo" width="75px" height="75px" />
+			</div>
+		</div>
+		<div class="col-3">
+			<h3 style="
+						font-size: 25px;
+						color: black;
+						line-height: 90%;
+						text-align: left;
+						padding-left: 2%
+						">Aaron Chavez</h3>
+		</div>
+		<div class="col-8" style="
+						margin-top: 25px;
+						font-size: 18px;
+						text-align: right;
+						padding-right: 5%;
+						">
+			<div class="block" style="cursor: pointer;" onclick="window.location='/';">
+				<i class="fa fa-home" aria-hidden="true"></i>&nbsp;HOME</div>
+			<div class="block dropdown" style="cursor: default;">
+				<i class="fa fa-code" aria-hidden="true"></i>&nbsp;PROJECTS
+				<div class="dropdown-content">
+					<hr>
+					<div class="block" style="cursor:pointer;" onclick="window.location='/jstennis';">
+						<i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;JS TENNIS</div>
+					<hr>
+					<div class="block" style="cursor:pointer;" onclick="window.location='/colorgame';">
+						<i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;RGB COLOR GAME</div>
+					<hr>
+				</div>
+			</div>
+			<div class="block" style="cursor: pointer;" onclick="window.location='/aboutme';">
+				<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;ABOUT ME</div>
+		</div>
+	</div>
+
+	<!-- Mobile Navbar -->
+	<div class="navbarMobile">
+		<hr>
+		<a class="mobileLink" href="/">
+			<div>
+				<i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</div>
+		</a>
+		<hr>
+		<a class="mobileLink" href="/aboutme">
+			<div>
+				<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;About Me</div>
+		</a>
+		<hr>
+		<a class="mobileLink" style="font-weight: 300;">
+			<div>Projects:</div>
+		</a>
+		<br>
+		<a class="mobileLink" href="/jstennis">
+			<div>
+				<i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp;JS Tennis</div>
+		</a>
+		<hr>
+		<a class="mobileLink" href="/colorgame">
+			<div>
+				<i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;RGB COLOR GAME</div>
+		</a>
+		<hr>
+	</div>
+	<div id="mobileNavIcon">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
