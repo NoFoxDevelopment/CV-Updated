@@ -2,6 +2,9 @@
   "name": "cv-updated-mean",
   "version": "3.0.0",
   "description": "2018 CV utilizing MEAN stack",
+  "engines": {
+    "node": "9.3.0"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,8 +31,5 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "faker": "^4.1.0"
-  },
-  "engines": {
-    "node": "9.3.0"
   }
 }
