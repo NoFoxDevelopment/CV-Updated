@@ -1,37 +1,27 @@
 <%include partials/header%>
 
-	<div class="row">
-		<div class="col-lg">
-			<h1>JS Tennis - a short JavaScript project</h1>
-		</div>
-	</div>
+	<div class="ui main text container">
+		<h1>JS Tennis - a short JavaScript project</h1>
 
-	<canvas id="gameCanvas" width="480" height="600"></canvas>
+		<canvas id="gameCanvas" width="480" height="600"></canvas>
 
-	<div class="row">
-		<div class="col-lg text" id="gameMessage">
-			<p>For now, this game does not scale well with mobile devices. I am hoping to have this playable on mobile soon
+		<div class="ui text container">
+			<div id="gameMessage">
+				<p>For now, this game does not scale well with mobile devices. I am hoping to have this playable on mobile soon
 				<sup>TM</sup>.</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg">
-			<div id="reloadButton" style="display: none;">
-				<a href="#" class="button" onClick="location.reload()">Click Here to Play Again</a>
 			</div>
-		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-lg">
-			<h3>
-				Features of this Project
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg text">
+			<button class="ui labeled icon button" id="reloadButton" href="/jsgame">
+				<i class="refresh icon"></i>Click Here to Play Again
+			</button>
+
+			<div class="ui inverted segment">
+				<h4 class="ui horizontal inverted divider">
+					<i class="terminal icon"></i>
+					Features of this Project
+				</h4>
+			</div>
+
 			<p>JSTennis is a short, pong-like game created using JavaScript, and HTML5 Canvas Drawing (2D)</p>
 			<p>Features include:</p>
 			<ul>
@@ -42,9 +32,8 @@
 				<li>Gradual increase in ball speed with each hit, promoting a quick resolution of each set.</li>
 			</ul>
 			<p>Source code for this game can be found
-				<a href="https://github.com/NoFoxDevelopment/CV-Updated/blob/master/js/jstennis.js">HERE</a>.
-				<br />
-			<p>I used this projectt to teach myself both simple canvas operations as well as JavaScript fundamentals.</p>
+			<a href="https://github.com/NoFoxDevelopment/CV-Updated/blob/master/js/jstennis.js">HERE</a>.</p>
+			<p>I used this project to teach myself both simple canvas operations as well as JavaScript fundamentals.</p>
 		</div>
 	</div>
 

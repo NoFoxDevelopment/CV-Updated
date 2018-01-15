@@ -1,8 +1,10 @@
 const 	express 	= require('express'),
 		app 		= express();
 
+app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
 
 /**************
 * APP ROUTING *
@@ -28,6 +30,6 @@ app.get('/jstennis', function(req, res){
 * SERVER START *
 ***************/
 
-app.listen(3000, function(){
-	console.log('CV being served on port 3000');
+app.listen(app.get('port'), function() {
+  console.log('CV being served on port ', app.get('port'));
 });

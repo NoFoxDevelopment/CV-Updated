@@ -135,7 +135,7 @@ if (!isMobile()) {
 					ctx.fillStyle = '#0070E3';
 					ctx.font = "30px Courier";
 					ctx.fillText('YOU WIN!', 160, canvas.height / 5);
-					document.getElementById('reloadButton').style.display = 'block';
+					document.getElementById('reloadButton').style.visibility = 'visible';
 					endGame();  //AI misses ball, so win if playerscore is 40, then give "Play Again" button to reload page and allow another match.
 				}
 			}
@@ -161,7 +161,7 @@ if (!isMobile()) {
 					ctx.fillStyle = '#0070E3';
 					ctx.font = "30px Courier";
 					ctx.fillText('AI WIN!', 160, canvas.height / 2);
-					document.getElementById('reloadButton').style.display = 'block';
+					document.getElementById('reloadButton').style.visibility = 'visible';
 					endGame(); //Player misses ball, so lose if AIscore is 40, then give "Play Again" button to reload page and allow another match.
 				}
 			}
@@ -179,6 +179,7 @@ if (!isMobile()) {
 
 	function endGame() { //Stop drawing when game is won or lost.
 		clearInterval(drawing);
+		document.getElementById('reloadButton').style.visibility = 'visible';
 	}
 
 	function reset() { //Reset ball position and velocity.
