@@ -1,3 +1,41 @@
 * {
 	--nofox-orange:  #D84700;
+	--background: #333333;
+}
+body {
+	zindex: -1;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+a {
+	color: var(--nofox-orange) !important;
+}
+h1 {
+	font-size: 3em !important;
+	font-family: 'Ubuntu', sans-serif !important
+}
+
+.contactInfo {
+	font-size: 1.5em;
+}
+.legalCrap {
+	font-size: .7em;
+}
+.maingrid {
+	margin: 0 15% 0 15% !important;
+	background-color: var(--background);
+	padding:75px 30px 50px 30px !important;
+	color: white;
+	box-shadow: 20px 10px 10px grey, -20px 10px 10px grey;
+	z-index: 1;
+}
+.ui.header {
+	color: white !important;
+}
+
+#desktopNav {
+	z-index: 50;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+#foxHeadAnimata {
+	max-width: 400px;
 }

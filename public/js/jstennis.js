@@ -187,4 +187,8 @@ if (!isMobile()) {
 		y = canvas.height / 2;
 		xv = 2;
 	}
+
+	function reload() {
+		location.reload();
+	}
 }

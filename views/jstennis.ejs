@@ -1,4 +1,4 @@
-<%include partials/header%>
+<% include partials/header %>
 
 	<div class="ui main text container">
 		<h1>JS Tennis - a short JavaScript project</h1>
@@ -11,7 +11,7 @@
 				<sup>TM</sup>.</p>
 			</div>
 
-			<button class="ui labeled icon button" id="reloadButton" href="/jsgame">
+			<button class="ui labeled icon button" id="reloadButton" onclick="reload()">
 				<i class="refresh icon"></i>Click Here to Play Again
 			</button>
 
@@ -37,6 +37,7 @@
 		</div>
 	</div>
 
+	<script src="js/style.js"></script>
 	<script src="js/jstennis.js"></script>
 
-<%include partials/footer%>
+<% include partials/footer %>

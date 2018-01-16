@@ -5,4 +5,4 @@ function logoRefresh() {
 
 	$('#foxHeadAnimata').attr('src', ""); //erase the source
 	$('#foxHeadAnimata').attr('src', svgSource + '?' + new Date().getTime()); //add the date to the source of the image to force new anim
-}
+};
