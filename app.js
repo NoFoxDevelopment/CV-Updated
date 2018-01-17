@@ -23,11 +23,11 @@ app.get('/projects', function(req, res){
 	res.render('projects');
 });
 
-app.get('/colorgame', function(req, res){
+app.get('/projects/colorgame', function(req, res){
 	res.render('colorgame');
 });
 
-app.get('/jstennis', function(req, res){
+app.get('/projects/jstennis', function(req, res){
 	res.render('jstennis');
 });
 

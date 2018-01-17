@@ -39,12 +39,19 @@ if (!isMobile()) {
 		playerScore = 0,
 		AIScore = 0,
 		AISpeed = 30;
+		rect = canvas.getBoundingClientRect();
 
 	//Track Mouse Position relative to canvas for precise paddle control
-	canvas.addEventListener('mousemove', function (e) {
-		let relativeX = e.clientX - canvas.offsetLeft;
-		paddleX = relativeX - paddleWidth / 2;
-	})
+	function getMousePos(canvas, evt) {
+		return {
+			x: evt.clientX - rect.left,
+			y: evt.clientY - rect.top
+		};
+	}
+	canvas.addEventListener('mousemove', function(evt) {
+		let mousePos = getMousePos(canvas, evt);
+		paddleX = evt.clientX - rect.left - (paddleWidth / 2);
+	}, false);
 
 	function drawBall() {
 		ctx.beginPath();

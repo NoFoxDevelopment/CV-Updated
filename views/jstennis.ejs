@@ -1,43 +1,48 @@
 <% include partials/header %>
 
-	<div class="ui main text container">
-		<h1>JS Tennis - a short JavaScript project</h1>
-
-		<canvas id="gameCanvas" width="480" height="600"></canvas>
-
-		<div class="ui text container">
+	<div class="ui centered grid maingrid">
+		<div class="one column row">
+			<h2 Class="ui horizontal divider header">
+				JS Tennis - a short JavaScript project
+			</h2>
+		</div>
+		<div class="one column row">
+			<canvas id="gameCanvas" width="480" height="600"></canvas>
 			<div id="gameMessage">
 				<p>For now, this game does not scale well with mobile devices. I am hoping to have this playable on mobile soon
 				<sup>TM</sup>.</p>
 			</div>
-
+		</div>
+		<div class="one column row">
 			<button class="ui labeled icon button" id="reloadButton" onclick="reload()">
 				<i class="refresh icon"></i>Click Here to Play Again
 			</button>
-
-			<div class="ui inverted segment">
-				<h4 class="ui horizontal inverted divider">
-					<i class="terminal icon"></i>
-					Features of this Project
-				</h4>
+		</div>
+	</div>
+	<div class="ui grid maingrid" id="jsDesc">
+		<h2 Class="ui horizontal divider header">
+			<i class="terminal icon"></i>
+			Features of this Project
+		</h2>
+		<div class="one column row">
+			<div class="ui main text container">
+				<p>JSTennis is a short, pong-like game created using JavaScript, and HTML5 Canvas Drawing (2D)</p>
+				<p>Features include:</p>
+				<ul>
+					<li>Score Keeping and Win/Loss Conditions</li>
+					<li>Mouse Tracking for Player Racket Control</li>
+					<li>Simple Throttled Paddle AI</li>
+					<li>AI which speeds up as the player scores and slows down as it scores</li>
+					<li>Gradual increase in ball speed with each hit, promoting a quick resolution of each set.</li>
+				</ul>
+				<p>Source code for this game can be found
+				<a href="https://github.com/NoFoxDevelopment/CV-Updated/blob/master/js/jstennis.js">HERE</a>.</p>
+				<p>I used this project to teach myself both simple canvas operations as well as JavaScript fundamentals.</p>
 			</div>
-
-			<p>JSTennis is a short, pong-like game created using JavaScript, and HTML5 Canvas Drawing (2D)</p>
-			<p>Features include:</p>
-			<ul>
-				<li>Score Keeping and Win/Loss Conditions</li>
-				<li>Mouse Tracking for Player Racket Control</li>
-				<li>Simple Throttled Paddle AI</li>
-				<li>AI which speeds up as the player scores and slows down as it scores</li>
-				<li>Gradual increase in ball speed with each hit, promoting a quick resolution of each set.</li>
-			</ul>
-			<p>Source code for this game can be found
-			<a href="https://github.com/NoFoxDevelopment/CV-Updated/blob/master/js/jstennis.js">HERE</a>.</p>
-			<p>I used this project to teach myself both simple canvas operations as well as JavaScript fundamentals.</p>
 		</div>
 	</div>
 
-	<script src="js/style.js"></script>
-	<script src="js/jstennis.js"></script>
+	<!-- <script src="/js/style.js"></script> -->
+	<script src="/js/jstennis.js"></script>
 
 <% include partials/footer %>

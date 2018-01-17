@@ -2,22 +2,20 @@
 	--nofox-orange:  #D84700;
 	--background: #333333;
 }
+
+a {
+	color: var(--nofox-orange) !important;
+}
 body {
 	z-index: -1 !important;
 	font-family: 'Ubuntu', sans-serif !important;
 }
-a {
-	color: var(--nofox-orange) !important;
+canvas {
+	min-width: 480;
 }
 h1 {
 	font-size: 3em !important;
 	font-family: 'Ubuntu', sans-serif !important;
-}
-h2 {
-	margin-bottom: 20px !important;
-	color: var(--nofox-orange) !important;
-	font-family: 'Ubuntu', sans-serif !important;
-	font-weight: lighter !important;
 }
 p {
 	font-family: 'Ubuntu', sans-serif !important;
@@ -30,6 +28,10 @@ p {
 .aRight {
 	padding: 0 5% 5% 30%;
 	font-size: .85em;
+}
+.centered.column {
+	padding: 0 11% 0 11% !important;
+	margin: 0 auto !important;
 }
 .contactInfo {
 	font-size: 1.5em !important;
@@ -65,6 +67,13 @@ p {
 .texticon {
 	font-weight: bold !important;
 }
+.ui.card {
+	cursor: pointer;
+}
+.ui.card:last-child {
+	padding: 1%;
+	color: black;
+}
 .ui.header {
 	color: white !important;
 }
@@ -83,6 +92,53 @@ p {
 #foxHeadAnimata {
 	max-width: 400px !important;
 }
+#gameMessage {
+	display: none;
+}
 #jQueryLogo {
 	height: 16px !important;
+}
+#jsDesc {
+	padding: 0 !important;
+}
+#reloadButton {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 990px) {
+	.centered.column {
+		padding: 0 30% 0 30% !important;
+		margin: 0 auto !important;
+	}
+}
+
+@media only screen and (max-width: 775px) {
+	canvas {
+		display: none !important;
+	}
+
+	.centered.column {
+		padding: 0 25% 0 25% !important;
+		margin: 0 auto !important;
+	}
+	.maingrid {
+		margin: 0 !important;
+		background-color: var(--background) !important;
+		padding:60px 15% 50px 15% !important;
+		color: white!important;
+		z-index: 1!important;
+	}
+	.ui.main.text.container {
+		font-size: .9em;
+	}
+
+	#gameMessage {
+		display: block;
+	}
+	#overflow {
+		display: none;
+	}
+	#reloadButton {
+		display: none !important;
+	}
 }
