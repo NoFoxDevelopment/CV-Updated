@@ -9,6 +9,7 @@ a {
 body {
 	z-index: -1 !important;
 	font-family: 'Ubuntu', sans-serif !important;
+	background: #999999 !important;
 }
 canvas {
 	min-width: 480;
@@ -91,6 +92,7 @@ p {
 }
 #foxHeadAnimata {
 	max-width: 400px !important;
+	max-height: 100% !important;
 }
 #gameMessage {
 	display: none;

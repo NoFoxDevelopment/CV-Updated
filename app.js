@@ -12,7 +12,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
 	res.render('index');
-	document.getElementById('home').className += ' active';
 });
 
 app.get('/aboutme', function(req, res){
