@@ -130,6 +130,13 @@ p {
 		color: white!important;
 		z-index: 1!important;
 	}
+	.ui.centered.grid > .row {
+		margin-bottom: 0;
+	}
+	.ui.grid > .row {
+		padding-top: 7px !important;
+		padding-bottom: 7px !important;
+	}
 	.ui.main.text.container {
 		font-size: .9em;
 	}
