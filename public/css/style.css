@@ -27,8 +27,9 @@ p {
 	font-size: .85em;
 }
 .aRight {
-	padding: 0 5% 5% 30%;
+	padding: 0 5% 5% 5%;
 	font-size: .85em;
+	text-align: right;
 }
 .centered.column {
 	padding: 0 11% 0 11% !important;
@@ -130,7 +131,7 @@ p {
 	.maingrid {
 		margin: 0 !important;
 		background-color: var(--background) !important;
-		padding:60px 15% 50px 15% !important;
+		padding:60px 2% 50px 2% !important;
 		color: white!important;
 		z-index: 1!important;
 	}
@@ -165,7 +166,7 @@ p {
 		display: none;
 	}
 	.maingrid {
-		padding:60px 7.5% 50px 7.5% !important;
+		padding:60px 2% 50px 2% !important;
 	}
 }
 
