@@ -92,7 +92,7 @@ p {
 }
 #foxHeadAnimata {
 	max-width: 400px !important;
-	max-height: 100% !important;
+	object-fit: contain;
 }
 #gameMessage {
 	display: none;
@@ -111,6 +111,10 @@ p {
 	.centered.column {
 		padding: 0 30% 0 30% !important;
 		margin: 0 auto !important;
+	}
+
+	#foxHeadAnimata {
+		max-height: 30%;
 	}
 }
 
@@ -149,5 +153,28 @@ p {
 	}
 	#reloadButton {
 		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.cgHeader {
+		padding: 0;
+		font-size: .8em !important;
+	}
+	.legalCrap {
+		display: none;
+	}
+	.maingrid {
+		padding:60px 7.5% 50px 7.5% !important;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.cgHeader {
+		padding: 0;
+		font-size: .8em !important;
+	}
+	#longName {
+		display: none;
 	}
 }
