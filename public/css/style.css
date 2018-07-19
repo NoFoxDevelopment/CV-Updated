@@ -1,0 +1,181 @@
+* {
+	--nofox-orange:  #D84700;
+	--background: #333333;
+}
+
+a {
+	color: var(--nofox-orange) !important;
+}
+body {
+	z-index: -1 !important;
+	font-family: 'Ubuntu', sans-serif !important;
+	background: #999999 !important;
+}
+canvas {
+	min-width: 480;
+}
+h1 {
+	font-size: 3em !important;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+p {
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+.aLeft {
+	padding: 0 30% 5% 5%;
+	font-size: .85em;
+}
+.aRight {
+	padding: 0 5% 5% 5%;
+	font-size: .85em;
+	text-align: right;
+}
+.centered.column {
+	padding: 0 11% 0 11% !important;
+	margin: 0 auto !important;
+}
+.contactInfo {
+	font-size: 1.5em !important;
+}
+.legalCrap {
+	font-size: .7em !important;
+}
+.maingrid {
+	margin: 0 15% 0 15% !important;
+	background-color: var(--background) !important;
+	padding:75px 30px 50px 30px !important;
+	color: white!important;
+	box-shadow: 20px 10px 10px grey, -20px 10px 10px grey!important;
+	z-index: 1!important;
+}
+.qLeft {
+	margin-right: 25%;
+	padding: 2%;
+	font-size: .9em;
+	border-radius: 15px 15px 15px 0;
+	background-color: #0051b2;
+}
+.qRight {
+	margin-left: 25%;
+	padding: 1%;
+	font-size: .9em;
+	border-radius: 15px 15px 0 15px;
+	background-color: #666666;
+}
+.sublist {
+	padding-left: 5% !important;
+}
+.texticon {
+	font-weight: bold !important;
+}
+.ui.card {
+	cursor: pointer;
+}
+.ui.card:last-child {
+	padding: 1%;
+	color: black;
+}
+.ui.header {
+	color: white !important;
+}
+.ui.list {
+	padding-left: 5% !important;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+.ui.medium.header {
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+#desktopNav {
+	z-index: 50;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+#foxHeadAnimata {
+	max-width: 400px !important;
+	object-fit: contain;
+}
+#gameMessage {
+	display: none;
+}
+#jQueryLogo {
+	height: 16px !important;
+}
+#jsDesc {
+	padding: 0 !important;
+}
+#reloadButton {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 990px) {
+	.centered.column {
+		padding: 0 30% 0 30% !important;
+		margin: 0 auto !important;
+	}
+
+	#foxHeadAnimata {
+		max-height: 30%;
+	}
+}
+
+@media only screen and (max-width: 775px) {
+	canvas {
+		display: none !important;
+	}
+
+	.centered.column {
+		padding: 0 25% 0 25% !important;
+		margin: 0 auto !important;
+	}
+	.maingrid {
+		margin: 0 !important;
+		background-color: var(--background) !important;
+		padding:60px 2% 50px 2% !important;
+		color: white!important;
+		z-index: 1!important;
+	}
+	.ui.centered.grid > .row {
+		margin-bottom: 0;
+	}
+	.ui.grid > .row {
+		padding-top: 7px !important;
+		padding-bottom: 7px !important;
+	}
+	.ui.main.text.container {
+		font-size: .9em;
+	}
+
+	#gameMessage {
+		display: block;
+	}
+	#overflow {
+		display: none;
+	}
+	#reloadButton {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.cgHeader {
+		padding: 0;
+		font-size: .8em !important;
+	}
+	.legalCrap {
+		display: none;
+	}
+	.maingrid {
+		padding:60px 2% 50px 2% !important;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.cgHeader {
+		padding: 0;
+		font-size: .8em !important;
+	}
+	#longName {
+		display: none;
+	}
+}

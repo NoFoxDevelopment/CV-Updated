@@ -1,0 +1,42 @@
+<% include partials/header %>
+
+	<!-- Begin Page Content -->
+	<link rel="stylesheet" href="/css/colorGame.css">
+
+	<div class="ui centered grid maingrid">
+		<div class="one column row cgHeader">
+			<h1 class="gameHeader">NoFox's
+				<br>
+				<span class="goal">RGB</span>
+				<br> Guessing Game</h1>
+		</div>
+		<div class="one column row cgHeader">
+			<div id="subHeader">
+				<button class="CGBtn" id="reset">New Colors</button>
+				<span class="message"></span>
+				<button class="CGBtn" id="easyBtn">Easy</button>
+				<button class="CGBtn selected" id="hardBtn">Hard</button>
+			</div>
+		</div>
+		<div class="one column row" id="cgChoices">
+			<div class="cgContent">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
+		<!-- TODO: Refactor styling in order to better match jsTennis.js -->
+		<div class="one column row">
+				<p>This is a small adaptation of one of the exercises I completed for the Web Developer Boot Camp I attended in late 2017.</p>
+				<p>This project served to both strengthen my foundations in mobile first web design as well as providing a few updates to outdated practices. </p>
+				<p>The game, though simple, allows a quick display of such skills as Vanilla JavaScript DOM manipulation, additional JavaScript logic, linking multiple CSS files for flexibility and adapting codes and concepts for my own use.</p>
+		</div>
+	</div>
+
+
+	<script src="/js/colorGame.js"></script>
+
+<% include partials/footer %>
